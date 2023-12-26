@@ -1,42 +1,86 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+main{
+  width:100vw;
+  height: 100vh;
+  background-color: hsl(47, 88%, 63%) ;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
+.contentbox{
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 10px 10px;
+}
+.contentbox:hover{
+  box-shadow: 20px 20px;
+}
+.illustration{
+  border-radius: 14px;
+}
+.datapublished{
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.tagButton{
+  background-color: hsl(47, 88%, 63%);
+  padding: 5px 10px;
+  width:max-content;
+  border-radius: 4px;
+  font-weight: bolder;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.link{
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.link:hover{
+  color:hsl(47, 88%, 63%);
+}
+.description{
+  width:320px;
+  color:hsl(0, 0%, 50%);
+}
+.infoprofile{
+  display: flex;
+  align-items:center;
+  gap: 10px;
+  font-weight:bolder;
+  img{
+    width: 30px;
   }
-  to {
-    transform: rotate(360deg);
+}
+.attribution{
+  position: absolute;
+  bottom: 10px;
+  right:10px;
+}
+
+@media only screen and (max-width: 600px) {
+
+.description{
+  width: 230px;
+  font-size: 0.8rem;
+}
+.link{
+  font-size:1rem;
+}
+.datapublished{
+  font-size:0.8rem;
+}
+.contentbox{
+  width: 280px;
+  gap:8px;
+  box-shadow: 8px 8px;
+}
+.infoprofile{
+  gap:8px;
+  p{
+    font-size: 0.8rem;
   }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
